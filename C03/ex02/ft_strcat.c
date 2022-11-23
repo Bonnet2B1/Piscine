@@ -6,25 +6,25 @@
 /*   By: edelarbr <edelarbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 23:32:12 by edelarbr          #+#    #+#             */
-/*   Updated: 2022/07/27 18:28:17 by edelarbr         ###   ########.fr       */
+/*   Updated: 2022/11/23 16:40:13 by edelarbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *s1, char *s2)
 {
 	int	i;
 	int	isrc;
 
 	i = 0;
 	isrc = 0;
-	while (dest[i])
+	while (s1[i])
 		i++;
-	while (src[isrc])
+	while (s2[isrc])
 	{
-		dest[i] = src[isrc];
+		s1[i] = s2[isrc];
 		i++;
 		isrc++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	s1[i] = '\0';
+	return (s1);
 }
